@@ -5,24 +5,51 @@ Git & GitHub Questions
 STEP A
 QUESTION: What are your git config commands?
 
+Command:
 git config --global user.name "Sarp Onaran"
 git config --global user.email "19soft1033@isik.edu.tr"
 git config --global core.editor nano
+
+Verification Command:
+git config --list
+
+Output:
+credential.helper=osxkeychain
+init.defaultbranch=main
+user.name=Sarp Onaran
+user.email=19soft1033@isik.edu.tr
+core.editor=nano
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+core.precomposeunicode=true
+remote.origin.url=https://github.com/sarp-onaran/soft2101-hw4.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
 
 --------------------------------------------------
 STEP B
 QUESTION: What files or directories are in your local .git directory?
 
-HEAD
+Command:
+ls -la .git
+
+Output:
+COMMIT_EDITMSG
 config
 description
+HEAD
 hooks
-info
-objects
-refs
 index
+info
 logs
+objects
+ORIG_HEAD
 packed-refs
+refs
 
 --------------------------------------------------
 STEP C
@@ -72,14 +99,96 @@ ff104d8 satisfying requirement change three
 STEP M
 QUESTION: What are the differences between main and the other three branches?
 
+Command:
 git diff main feature-1
-Shows differences in RangePrinter.java where the original range printing logic exists
-before applying odd/even filtering.
 
+Output:
+diff --git a/.gitignore b/.gitignore
+index ef1ba0f..a47797b 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -3,17 +3,3 @@
+ .idea/
+ .vscode/
+ 
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-node_modules/
+-
+diff --git a/README.md b/README.md
+index 8c5b140..e53fe1c 100644
+--- a/README.md
++++ b/README.md
+@@ -9,4 +9,3 @@ This repository contains Homework 4 for the course **SOFT2101 – Principles of
+ 
+ ## Department Website
+ [Department of Software Engineering – Işık University](https://www.isikun.edu.tr/akademik/mdbf/bilgisayar-muhendisligi/yazilim-muhendisligi-lisans/yazilim-muhendisligi-lisans)
+-
+diff --git a/hmk1/RangePrinter.java b/hmk1/RangePrinter.java
+index 60d2b3d..f48eda0 100644
+--- a/hmk1/RangePrinter.java
++++ b/hmk1/RangePrinter.java
+@@ -9,9 +9,7 @@ public class RangePrinter {
+ 
+         if (a < b) {
+             for (int i = a + 1; i < b; i++) {
+-             if (i % 2 == 0) {
+                 System.out.println(i);
+-             }
+             }
+         } else {
+             for (int i = b + 1; i < a; i++) {
+diff --git a/hmk4/homework4.txt b/hmk4/homework4.txt
+index 810bb57..1772075 100644
+--- a/hmk4/homework4.txt
++++ b/hmk4/homework4.txt
+@@ -2,16 +2,16 @@ SOFT2101 – Homework 4
+ Git & GitHub Questions
+
+Command:
 git diff main feature-2
-Shows differences in RangePrinter.java where the method is modified to print only odd
-numbers in the given range.
 
+Output:
+diff --git a/hmk1/RangePrinter.java b/hmk1/RangePrinter.java
+index 60d2b3d..d476c38 100644
+--- a/hmk1/RangePrinter.java
++++ b/hmk1/RangePrinter.java
+@@ -9,9 +9,9 @@ public class RangePrinter {
+ 
+         if (a < b) {
+             for (int i = a + 1; i < b; i++) {
+-             if (i % 2 == 0) {
++               if(i % 2 != 0) {
+                 System.out.println(i);
+-             }
++              }
+             }
+         } else {
+             for (int i = b + 1; i < a; i++) {
+diff --git a/hmk4/homework4.txt b/hmk4/homework4.txt
+index 810bb57..1772075 100644
+--- a/hmk4/homework4.txt
++++ b/hmk4/homework4.txt
+@@ -2,16 +2,16 @@ SOFT2101 – Homework 4
+ Git & GitHub Questions
+
+Command:
 git diff main feature-3
-No output, because feature-3 has already been merged into main and there are no
-differences.
+
+Output:
+diff --git a/hmk4/homework4.txt b/hmk4/homework4.txt
+index 810bb57..1772075 100644
+--- a/hmk4/homework4.txt
++++ b/hmk4/homework4.txt
+@@ -2,16 +2,16 @@ SOFT2101 – Homework 4
+ Git & GitHub Questions

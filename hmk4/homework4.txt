@@ -1,3 +1,32 @@
 SOFT2101 – Homework 4
 Git & GitHub Questions
 
+--------------------------------------------------
+QUESTION A
+What are your git config commands?
+
+git config --global user.name "Your Name Surname"
+git config --global user.email "your.email@example.com"
+git config --global core.editor nano
+
+--------------------------------------------------
+QUESTION B
+What files or directories are in your local .git directory?
+
+HEAD
+config
+description
+hooks
+info
+objects
+refs
+index
+logs
+packed-refs
+
+--------------------------------------------------
+QUESTION C
+Using markdown, how would you put a clickable link in your README.md to the web page of the Department of Software Engineering of Işık University?
+
+[Department of Software Engineering – Işık University](https://www.isikun.edu.tr/akademik/mdbf/bilgisayar-muhendisligi/yazilim-muhendisligi-lisans/yazilim-muhendisligi-lisans)
+

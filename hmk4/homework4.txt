@@ -78,8 +78,12 @@ Commits on feature-1:
 Files in hmk1 on feature-1:
 RangePrinter.java
 
-Files in hmk1 on main before merge:
-(empty)
+Files in hmk1 on main branch:
+RangePrinter.java
+
+Explanation:
+Before merging feature-1, the hmk1 directory did not exist on the main branch.
+After merging feature-1 into main, the hmk1 directory contains RangePrinter.java.
 
 --------------------------------------------------
 STEP J

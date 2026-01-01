@@ -73,11 +73,13 @@ STEP M
 QUESTION: What are the differences between main and the other three branches?
 
 git diff main feature-1
-- feature-1 prints all numbers between inputs
+Shows differences in RangePrinter.java where the original range printing logic exists
+before applying odd/even filtering.
 
 git diff main feature-2
-- feature-2 prints only odd numbers
+Shows differences in RangePrinter.java where the method is modified to print only odd
+numbers in the given range.
 
 git diff main feature-3
-- no difference (already merged)
-
+No output, because feature-3 has already been merged into main and there are no
+differences.

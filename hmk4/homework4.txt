@@ -2,16 +2,16 @@ SOFT2101 – Homework 4
 Git & GitHub Questions
 
 --------------------------------------------------
-QUESTION A
-What are your git config commands?
+STEP A
+QUESTION: What are your git config commands?
 
-git config --global user.name "Your Name Surname"
-git config --global user.email "your.email@example.com"
+git config --global user.name "Sarp Onaran"
+git config --global user.email "19soft1033@isik.edu.tr"
 git config --global core.editor nano
 
 --------------------------------------------------
-QUESTION B
-What files or directories are in your local .git directory?
+STEP B
+QUESTION: What files or directories are in your local .git directory?
 
 HEAD
 config
@@ -25,8 +25,59 @@ logs
 packed-refs
 
 --------------------------------------------------
-QUESTION C
-Using markdown, how would you put a clickable link in your README.md to the web page of the Department of Software Engineering of Işık University?
+STEP C
+QUESTION: Using markdown, how would you put a clickable link in your README.md to the web page of the Department of Software Engineering of Işık University?
 
 [Department of Software Engineering – Işık University](https://www.isikun.edu.tr/akademik/mdbf/bilgisayar-muhendisligi/yazilim-muhendisligi-lisans/yazilim-muhendisligi-lisans)
+
+--------------------------------------------------
+STEP D
+QUESTION: What rules are in your .gitignore?
+
+.idea/
+.vscode/
+node_modules/
+*.class
+
+--------------------------------------------------
+STEP F
+QUESTION: What are all the commits you’ve made on the feature-1 branch?
+What files are listed in your hmk1 directory on the feature-1 branch?
+What files are listed in your hmk1 directory on the main branch?
+
+Commits on feature-1:
+84b56f6 satisfying requirement one
+
+Files in hmk1 on feature-1:
+RangePrinter.java
+
+Files in hmk1 on main before merge:
+(empty)
+
+--------------------------------------------------
+STEP J
+QUESTION: What are all the commits you’ve made on the feature-2 branch?
+
+Commits on feature-2:
+4f45de2 satisfying requirement change two
+
+--------------------------------------------------
+STEP K
+QUESTION: What are all the commits you’ve made on the feature-3 branch?
+
+Commits on feature-3:
+ff104d8 satisfying requirement change three
+
+--------------------------------------------------
+STEP M
+QUESTION: What are the differences between main and the other three branches?
+
+git diff main feature-1
+- feature-1 prints all numbers between inputs
+
+git diff main feature-2
+- feature-2 prints only odd numbers
+
+git diff main feature-3
+- no difference (already merged)
 
